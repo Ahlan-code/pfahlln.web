@@ -1,0 +1,383 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header dan Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Logo */
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Navbar */
+nav {
+    margin-left: auto; /* Menggeser navbar ke kanan */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Jarak antar item navbar */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    display: block;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffcc00;
+}
+
+/* Section About */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    background: white;
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+}
+
+.about img {
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid #2c3e50;
+    transition: transform 0.3s;
+}
+
+.about img:hover {
+    transform: scale(1.1);
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+/* Section Services */
+.services {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f0f4f8;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.service-item img {
+    height: 80px;
+    margin-top: 10px;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 12px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4ca1af;
+}
+
+/* Social Media */
+#social-media {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+/* Styling untuk Section Biodata */
+#biodata {
+    font-family: 'Poppins', sans-serif;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#biodata:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk Judul Biodata */
+#biodata h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Styling untuk Paragraf Biodata */
+#biodata p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+/* Styling untuk Span dalam Biodata */
+#biodata p span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Styling untuk Gambar Profil */
+#biodata .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #007bff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#biodata .profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+/* Section Sertifikat */
+.handling {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f0f4f8;
+}
+
+.handling h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.certificates {
+    display: flex; /* Mengatur gambar menjadi flexbox */
+    justify-content: center; /* Pusatkan gambar */
+    align-items: center; /* Pusatkan gambar secara vertikal */
+    flex-wrap: wrap; /* Membuat gambar responsif */
+    gap: 20px; /* Jarak antar gambar */
+}
+
+.certificate-item {
+    background: white;
+    padding: 20px; /* Padding yang lebih besar untuk ruang */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Lebar item sertifikat yang proporsional */
+    transition: transform 0.3s;
+}
+
+.certificate-item:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-item img {
+    width: 100%; /* Mengatur lebar gambar agar responsif */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    max-height: 150px; /* Maksimal tinggi gambar */
+    margin-bottom: 10px;
+}
+
+.certificate-item .caption {
+    font-size: 1rem;
+    color: #2c3e50;
+    text-align: center; /* Pusatkan teks caption */
+}
+/* Styling untuk dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.dropdown-toggle {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.dropdown-toggle:hover {
+    background-color: #ffffff43;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#biodata {
+    animation: fadeIn 0.6s ease-in-out;
+}
+ 
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about {
+        margin: 20px;
+    }
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
